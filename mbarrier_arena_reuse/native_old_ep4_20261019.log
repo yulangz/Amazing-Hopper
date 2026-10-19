@@ -1,0 +1,78 @@
+NCCL version 2.31.2+cuda12.9
+{"event": "start", "extension": "/storage/openpsi/codes/wanghaitao.wht/project/ops/WeftMoE/build/pf_main_timeline/qwen_areal_pf_dt_20261016/_runtime.cpython-312-x86_64-linux-gnu.so", "seed": 8123, "rounds": 1000, "layers": 16, "world": 4}
+{"event": "pass", "round": 0, "backward_calls": 16, "elapsed_s": 0.67}
+{"event": "pass", "round": 10, "backward_calls": 176, "elapsed_s": 4.53}
+{"event": "pass", "round": 20, "backward_calls": 336, "elapsed_s": 8.4}
+{"event": "pass", "round": 30, "backward_calls": 496, "elapsed_s": 12.23}
+{"event": "pass", "round": 40, "backward_calls": 656, "elapsed_s": 16.06}
+{"event": "pass", "round": 50, "backward_calls": 816, "elapsed_s": 19.89}
+{"event": "pass", "round": 60, "backward_calls": 976, "elapsed_s": 23.73}
+{"event": "pass", "round": 70, "backward_calls": 1136, "elapsed_s": 27.66}
+{"event": "pass", "round": 80, "backward_calls": 1296, "elapsed_s": 31.53}
+{"event": "pass", "round": 90, "backward_calls": 1456, "elapsed_s": 35.41}
+{"event": "pass", "round": 100, "backward_calls": 1616, "elapsed_s": 39.27}
+{"event": "pass", "round": 110, "backward_calls": 1776, "elapsed_s": 43.11}
+{"event": "pass", "round": 120, "backward_calls": 1936, "elapsed_s": 46.9}
+{"event": "pass", "round": 130, "backward_calls": 2096, "elapsed_s": 50.67}
+{"event": "pass", "round": 140, "backward_calls": 2256, "elapsed_s": 54.45}
+{"event": "pass", "round": 150, "backward_calls": 2416, "elapsed_s": 58.26}
+{"event": "pass", "round": 160, "backward_calls": 2576, "elapsed_s": 62.09}
+{"event": "pass", "round": 170, "backward_calls": 2736, "elapsed_s": 65.93}
+{"event": "pass", "round": 180, "backward_calls": 2896, "elapsed_s": 69.8}
+{"event": "pass", "round": 190, "backward_calls": 3056, "elapsed_s": 73.67}
+{"event": "pass", "round": 200, "backward_calls": 3216, "elapsed_s": 77.54}
+{"event": "pass", "round": 210, "backward_calls": 3376, "elapsed_s": 81.39}
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/storage/openpsi/codes/wanghaitao.wht/project/ops/Amazing-Hopper/mbarrier_arena_reuse/native_stress.py", line 78, in <module>
+[rank3]:     raise RuntimeError("native PF corruption captured before optimizer")
+[rank3]: RuntimeError: native PF corruption captured before optimizer
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/storage/openpsi/codes/wanghaitao.wht/project/ops/Amazing-Hopper/mbarrier_arena_reuse/native_stress.py", line 78, in <module>
+[rank0]:     raise RuntimeError("native PF corruption captured before optimizer")
+[rank0]: RuntimeError: native PF corruption captured before optimizer
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/storage/openpsi/codes/wanghaitao.wht/project/ops/Amazing-Hopper/mbarrier_arena_reuse/native_stress.py", line 78, in <module>
+[rank1]:     raise RuntimeError("native PF corruption captured before optimizer")
+[rank1]: RuntimeError: native PF corruption captured before optimizer
+{"event": "corruption", "rank": 2, "step": 217, "layer": 11, "tokens": 32767, "tensor": "dw1", "count": 48, "indices": [[1, 608, 1792], [1, 608, 1794], [1, 608, 1795], [1, 608, 1796], [1, 608, 1798], [1, 608, 1799], [1, 608, 1800], [1, 608, 1802], [1, 608, 1803], [1, 608, 1804], [1, 608, 1807], [1, 608, 1808], [1, 608, 1811], [1, 608, 1812], [1, 608, 1815], [1, 608, 1816], [1, 608, 1818], [1, 608, 1819], [1, 608, 1820], [1, 608, 1822], [1, 608, 1823], [1, 608, 1824], [1, 608, 1826], [1, 608, 1827], [1, 736, 1792], [1, 736, 1794], [1, 736, 1795], [1, 736, 1796], [1, 736, 1798], [1, 736, 1799], [1, 736, 1800], [1, 736, 1802], [1, 736, 1803], [1, 736, 1804], [1, 736, 1807], [1, 736, 1808], [1, 736, 1811], [1, 736, 1812], [1, 736, 1815], [1, 736, 1816], [1, 736, 1818], [1, 736, 1819], [1, 736, 1820], [1, 736, 1822], [1, 736, 1823], [1, 736, 1824], [1, 736, 1826], [1, 736, 1827]], "values": [NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN, NaN, -1.0384593717069655e+34, NaN]}
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/storage/openpsi/codes/wanghaitao.wht/project/ops/Amazing-Hopper/mbarrier_arena_reuse/native_stress.py", line 78, in <module>
+[rank2]:     raise RuntimeError("native PF corruption captured before optimizer")
+[rank2]: RuntimeError: native PF corruption captured before optimizer
+[rank0]:[W1019 06:49:59.796508168 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W1019 06:49:59.961000 509263 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 509279 closing signal SIGTERM
+W1019 06:49:59.964000 509263 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 509280 closing signal SIGTERM
+W1019 06:50:00.016000 509263 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 509282 closing signal SIGTERM
+E1019 06:50:00.473000 509263 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 2 (pid: 509281) of binary: /opt/.venv/bin/python3
+Traceback (most recent call last):
+  File "/opt/.venv/bin/torchrun", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/.venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 936, in main
+    run(args)
+  File "/opt/.venv/lib/python3.12/site-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/opt/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/.venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+native_stress.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-19_06:49:59
+  host      : gpulingjun010010016219.os30
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 509281)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
