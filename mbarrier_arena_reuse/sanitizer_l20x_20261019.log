@@ -1,0 +1,12 @@
+========= COMPUTE-SANITIZER
+{"device":"NVIDIA L20X","cluster":2,"ctas":2,"steps":32,"repeats":2,"drain":0,"invalidate":0,"gemm":1,"phases":2,"registers":166,"local_bytes":0,"shared_bytes":213120,"mismatches":0,"nonfinite":0,"overlap":0,"gemm_mismatches":0,"first_index":4294967295,"observed":0,"expected":0}
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)
+========= COMPUTE-SANITIZER
+{"device":"NVIDIA L20X","cluster":2,"ctas":2,"steps":32,"repeats":2,"drain":0,"invalidate":0,"gemm":1,"phases":2,"registers":166,"local_bytes":0,"shared_bytes":213120,"mismatches":0,"nonfinite":0,"overlap":0,"gemm_mismatches":0,"first_index":4294967295,"observed":0,"expected":0}
+========= ERROR SUMMARY: 0 errors
+========= COMPUTE-SANITIZER
+{"device":"NVIDIA L20X","cluster":2,"ctas":2,"steps":32,"repeats":2,"drain":1,"invalidate":1,"gemm":1,"phases":2,"registers":166,"local_bytes":0,"shared_bytes":213120,"mismatches":0,"nonfinite":0,"overlap":0,"gemm_mismatches":0,"first_index":4294967295,"observed":0,"expected":0}
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)
+========= COMPUTE-SANITIZER
+{"device":"NVIDIA L20X","cluster":2,"ctas":2,"steps":32,"repeats":2,"drain":1,"invalidate":1,"gemm":1,"phases":2,"registers":166,"local_bytes":0,"shared_bytes":213120,"mismatches":0,"nonfinite":0,"overlap":0,"gemm_mismatches":0,"first_index":4294967295,"observed":0,"expected":0}
+========= ERROR SUMMARY: 0 errors
