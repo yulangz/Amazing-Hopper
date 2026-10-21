@@ -13,3 +13,11 @@ build/repro: repro.cu ../tma_store_vs_vector/hopper.cuh
 build/minimal: minimal.cu
 	mkdir -p build
 	$(NVCC) $(FLAGS) $< -o $@
+
+build/state_probe: state_probe.cu
+	mkdir -p build
+	$(NVCC) $(FLAGS) $< -o $@
+
+build/cache_probe: cache_probe.cu
+	mkdir -p build
+	$(NVCC) $(FLAGS) $< -o $@

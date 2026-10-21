@@ -128,3 +128,21 @@ WeftMoE `9b38230`，本轮不修改生产 kernel。
 本目录代码为 Apache-2.0；流水线版复用相邻目录的 `hopper.cuh`，见
 [LICENSE](../tma_store_vs_vector/LICENSE) 和
 [THIRD_PARTY_NOTICES](../tma_store_vs_vector/THIRD_PARTY_NOTICES.md)。
+
+## 2026 年 10 月 21 日复验与硬件机制分析
+
+完整讨论见 [mbarrier arena 复用与 SYNCS 缓存写回分析](hardware_analysis.md)，
+包括 barrier 状态、SYNCS 的作用、shared backing storage 与输出 tile 的重叠、
+缓存写回机制，以及位置、容量和延迟的证据边界。
+
+本次重新编译复验确认双 context 下旧协议损坏、invalidate 对照正常。
+新增状态实验显示覆盖值跟随旧 barrier 的 count 和 phase 变化；新增缓存压力
+实验进一步表明：**无需第二个 context，同一 CTA 中访问足够多的其他 barrier
+也能触发相同覆盖。** 因此 context 竞争是有效触发条件，但不是必要条件。
+
+- [单 barrier 状态实验](state_probe.cu)及[运行脚本](run_state.py)。
+- [单 context 缓存压力实验](cache_probe.cu)。
+- 原始结果：[最小程序](results_context_minimal_20261021.jsonl)、
+  [流水线](results_context_stream_20261021.jsonl)、
+  [状态变化](results_state_20261021.jsonl)、
+  [缓存压力](results_cache_20261021.jsonl)。
